@@ -90,7 +90,7 @@ def draw?(board)
     return false
     exit
   end
-  if won?(board)
+  if (won?(board))
     return false
     exit
   end
