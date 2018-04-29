@@ -95,7 +95,6 @@ def draw?(board)
   if won?(board)
     return false
   end
-
 end
 
 
