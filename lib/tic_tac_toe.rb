@@ -95,6 +95,7 @@ def draw?(board)
   end
   if full?(board)
     return false
+    exit
   end
   if won?(board)
     return false
