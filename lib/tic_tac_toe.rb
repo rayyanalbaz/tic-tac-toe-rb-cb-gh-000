@@ -61,7 +61,6 @@ def won?(board)
       if ent.length == 9
         return false
       end
-
       WIN_COMBINATIONS.each do |win_combo|
         index1 = win_combo[0]
         index2 = win_combo[1]
@@ -73,10 +72,10 @@ def won?(board)
           return win_combo
         end
       end
-
       else
-          return false
+    return false
 end
+
 def full?(board)
 
   if board.all?{|i| i != " "}
@@ -84,8 +83,6 @@ def full?(board)
   else
     return false
   end
-
-
 end
 
 def draw?(board)
@@ -108,7 +105,6 @@ def over?(board)
 end
 
 def winner(board)
-
 if !(won?(board))
   return nil
 end
