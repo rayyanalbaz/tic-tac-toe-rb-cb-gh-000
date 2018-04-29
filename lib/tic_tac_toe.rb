@@ -86,13 +86,13 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.all?{|i| i != " "} && !(won?(board))
+  if full?(board) && !(won?(board))
     return true
   end
   if won?(board)
     return false
   end
-  if !(won?(board)) && board.any?{|e| e == " "}
+  if !(won?(board)) && !(full?(board))
     return false
   end
 end
